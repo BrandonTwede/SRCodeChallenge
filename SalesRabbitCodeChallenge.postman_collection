@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "dcd66b9e-4a74-48e3-b14c-b08a6e3f008b",
+		"name": "CodeChallenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://{{ip}}/api/nodes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://{{ip}}/api/nodes",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"nodes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{ip}}/api/nodes/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://{{ip}}/api/nodes/3",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"nodes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{ip}}/api/nodes/3/children",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://{{ip}}/api/nodes/3/children",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"nodes",
+						"3",
+						"children"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{ip}}/api/nodes/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"name\":\"New Name\" }"
+				},
+				"url": {
+					"raw": "http://{{ip}}/api/nodes/3",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"nodes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{ip}}/api/nodes/10/children",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"New Child\"}"
+				},
+				"url": {
+					"raw": "http://{{ip}}/api/nodes/10/children",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"nodes",
+						"10",
+						"children"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{ip}}/api/nodes/3?deleteChildren=true",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://{{ip}}/api/nodes/3?deleteChildren=true",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"nodes",
+						"3"
+					],
+					"query": [
+						{
+							"key": "deleteChildren",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{ip}}/api/nodes/5/children",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"idToMove\":\"4\"}"
+				},
+				"url": {
+					"raw": "http://{{ip}}/api/nodes/5/children",
+					"protocol": "http",
+					"host": [
+						"{{ip}}"
+					],
+					"path": [
+						"api",
+						"nodes",
+						"5",
+						"children"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
